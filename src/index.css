@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    background-image: 
+        url(./images/startpage--yellow--blob.svg),
+        url(./images/startpage--blue--blob.svg);
+        
+    
+    background-position: 
+        top right,
+        bottom left;
+    
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-color:#F5F7FB;
+}
+
+.startpage--container {
+
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.startpage--title {
+    font-size: 2.7rem;
+    margin: 0;
+    color:#293264;
+    font-family: "Karla";
+    font-weight: 700;
+}
+
+.startpage--description {
+    font-size: 1.3rem;
+    color:#293264;
+    font-family: "Inter";
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 1rem;
+    background-color:#4D5B9E;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    width: 190px;
+    height: 50px;
+    
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+.mainpage--container {
+    background-image: 
+    url(./images/mainpage--yellow--blob.svg),
+    url(./images/mainpage--blue--blob.svg);
+
+    background-position: 
+        top right,
+        bottom left;
+
+    background-size: 20%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+    height: 100vh;
+    position:relative;
+}
+
+.questions--text {
+    font-family:"Karla";
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+}
+
+.radio--labeltext {
+    display:inline-block;
+    cursor: pointer;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 0.9rem; 
+    border: 0.794239px solid #4D5B9E;
+    border-radius: 8px;
+    padding: 1.5px 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    /*white-space:nowrap;*/
+}
+
+.radio--input {
+    display: none;
+}
+
+input[type="radio"]:checked+ label { 
+    background-color:#D6DBF5 !important;
+}
+
+.question--separator {
+    margin-top: 20px;
+    height: 2.2px;
+    background-color:#DBDEF0;
+}
+
+.checkanswer--btn {
+    margin-top: 35px;
+    align-self: center;
+}
+
+.score--container {
+    margin-top: 1rem;
+    display:flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.score--text {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 700px)  {
+    .score--container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem !important;
+    }
+}
